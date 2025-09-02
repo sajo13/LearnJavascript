@@ -22,6 +22,20 @@
             return total / marks.length;
         }
 
+        function getGrade(avg) {
+            if (avg >= 90) {
+                return 'A';
+            } else if (avg >= 80) {
+                return 'B';
+            } else if (avg >= 70) {
+                return 'C';
+            } else if (avg >= 60) {
+                return 'D';
+            } else {
+                return 'F';
+            }
+        }
+
         let students = [
             { name: "Alice", marks: [85, 90, 78] },
             { name: "Bob", marks: [60, 65, 70] },
