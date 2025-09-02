@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <script>
+        // Write a function that takes an array of numbers, loops through them, and returns only even numbers.
+        function getEvenNumbers(numbers) {
+            let evens = [];
+
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
+                    evens.push(numbers[i]);
+                }
+            }
+            return evens;
+        }
+        console.log('____EVEN_NUMBERS');
+        console.log(JSON.stringify(getEvenNumbers([1,2,3,4]))); //[2,4]
+    </script>
+</head>
+<body>
+    <h1>JS LEarn</h1>
+</body>
+</html>
