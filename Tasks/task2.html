@@ -12,6 +12,16 @@
         // Display the result for each student.
         // Array of student objects
 
+        function calculateAverage(marks) {
+            let total = 0;
+
+            for (let i = 0; i < marks.length; i++) {
+                total += marks[i];
+            }
+
+            return total / marks.length;
+        }
+
         let students = [
             { name: "Alice", marks: [85, 90, 78] },
             { name: "Bob", marks: [60, 65, 70] },
