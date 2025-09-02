@@ -43,6 +43,20 @@
             { name: "David", marks: [40, 55, 50] }
         ];
 
+        console.log('-Result-');
+
+        for (let i = 0; i < students.length; i++) {
+            let student = students[i];
+            let marks = student.marks.join(", ");
+            let avg = calculateAverage(student.marks);
+            let grade = getGrade(avg);
+
+            console.log(`Student Name: ${student.name}`);
+            console.log(`Student Marks: ${marks}`);
+            console.log(`Average: ${avg}`);
+            console.log(`Grade: ${grade}`);
+        }
+        console.log('-----------------------');
     </script>
 </head>
 <body>
